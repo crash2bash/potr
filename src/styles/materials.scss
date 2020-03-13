@@ -1,0 +1,74 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
+.materials {
+
+  &__title {
+    width: 268px;
+    margin: 0 auto;
+
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 58px;
+    line-height: 58px;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+    color: $c-blue;
+    -webkit-text-stroke: 1px $c-blue;
+  }
+
+  &__image {
+    position: relative;
+    width: 320px;
+    height: 240px;
+    margin-top: -43px;
+    z-index: -1;
+  }
+
+  &__text {
+    position: relative;
+    width: 302px;
+    height: 254px;
+    box-sizing: border-box;
+    padding: 28px 44px 58px 45px;
+    margin: -58px auto 0;
+    background: rgba(0, 0, 0, 0.45);
+    mix-blend-mode: normal;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(34px);
+    color: #f8f8f8;
+  }
+
+  &__slide-list {
+    margin: 0 auto;
+    width: 72px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__slide {
+    position: absolute;
+    margin-top: -50px;
+
+    width: 6px;
+    height: 6px;
+
+    background-color: $c-main;
+    border: 1px solid $c-main;
+
+    transform: rotate(-45deg);
+    z-index: 3;
+
+    cursor: pointer;
+
+    &--active {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
