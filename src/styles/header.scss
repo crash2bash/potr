@@ -6,13 +6,18 @@
 @import "utils/extends";
 
 .header {
-  width: $mobile-content-width;
   margin: 0 auto;
 
   &__mobile {
+    width: $mobile-content-width;
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
+    margin: 15px auto;
+  }
+
+  &__container {
+    width: $mobile-content-width;
+    margin: 0 auto;
   }
 
   &__link {
@@ -33,6 +38,7 @@
     height: 32px;
 
     background-image: url(../images/sandwich.png);
+    cursor: pointer;
   }
 
   &__photo {
@@ -45,6 +51,8 @@
   }
 
   &__title {
+    margin: 0 0 21px;
+
     font-family: "Bebas Neue Bold", sans-serif;
     font-size: 36px;
     line-height: 36px;
@@ -55,5 +63,30 @@
 
     color: $c-blue;
     -webkit-text-stroke: 1px $c-blue;
+  }
+
+  &__price {
+    margin: 0;
+
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 26px;
+    line-height: 32px;
+
+    color: $c-light-black;
+  }
+
+  &__text {
+    display: block;
+    width: 139px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 21px;
+
+    color: $c-gray;
+  }
+
+  &--outer {
+    margin-bottom: 102px;
   }
 }
