@@ -1,0 +1,59 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
+.header {
+  width: $mobile-content-width;
+  margin: 0 auto;
+
+  &__mobile {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+
+  &__link {
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    color: $c-light-black;
+  }
+
+  &__sandwich {
+    width: 32px;
+    height: 32px;
+
+    background-image: url(../images/sandwich.png);
+  }
+
+  &__photo {
+    width: 320px;
+    height: 320px;
+
+    &--outer {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    color: $c-blue;
+    -webkit-text-stroke: 1px $c-blue;
+  }
+}

@@ -1,7 +1,17 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "navigation";
+@import "text-stroke";
+
+html {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 body {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
 }
