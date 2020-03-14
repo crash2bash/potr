@@ -14,6 +14,7 @@
   }
 
   &__title {
+    position: relative;
     margin: 0 0 27px;
     font-family: "Bebas Neue Bold", sans-serif;
     font-size: 36px;
@@ -29,6 +30,18 @@
       color: #000;
     }
 
+    &::after {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 46px;
+        left: 125px;
+        transform: rotate(22deg);
+        background-color: $c-light-black;
+      }
+    }
+
     &--first {
       @media (min-width: $tablet-width) {
         margin: 0;
@@ -40,6 +53,10 @@
     &--second {
       @media (min-width: $tablet-width) {
         margin: 0 0 11px;
+
+        &::after {
+          left: 260px;
+        }
       }
     }
 
@@ -158,10 +175,21 @@
   }
 
   &__extra {
+    position: relative;
     display: none;
 
     @media (min-width: $tablet-width) {
       display: block;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        margin-left: -21px;
+
+        background-image: url(../images/star.svg);
+      }
     }
 
     &--first {
