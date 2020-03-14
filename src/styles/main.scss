@@ -27,4 +27,8 @@ body {
   margin: 0 auto;
 
   background-color: $c-main;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }

@@ -10,6 +10,8 @@
   box-sizing: border-box;
   text-transform: uppercase;
 
+  transition: 0.3s ease-in-out;
+
   &--buy {
     width: 238px;
     height: 48px;
@@ -19,6 +21,7 @@
     line-height: 21px;
 
     background-color: #ffe339;
+    color: #121212;
     border: 1px solid #ffe339;
     outline: none;
 
@@ -26,6 +29,27 @@
     &:focus,
     &:active {
       background-color: transparent;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+      border: 1px solid $c-blue;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $c-blue;
+        color: #fff;
+      }
+    }
+  }
+
+  &--header {
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-left: auto;
+      margin-right: 30px;
     }
   }
 
