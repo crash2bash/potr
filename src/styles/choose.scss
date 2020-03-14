@@ -32,8 +32,8 @@
     }
 
     &--pseudo::before {
-      position: absolute;
       content: "*";
+      position: absolute;
       margin-left: -7px;
     }
 
