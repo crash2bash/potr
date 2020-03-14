@@ -28,17 +28,16 @@
     &--inner {
       margin: 0 0 28px;
       color: #000;
-    }
-
-    &::after {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        width: 1px;
-        height: 46px;
-        left: 125px;
-        transform: rotate(22deg);
-        background-color: $c-light-black;
+      &::after {
+        @media (min-width: $tablet-width) {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 46px;
+          left: 125px;
+          transform: rotate(22deg);
+          background-color: $c-light-black;
+        }
       }
     }
 
