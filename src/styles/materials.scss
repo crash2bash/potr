@@ -7,6 +7,14 @@
 
 .materials {
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: $tablet-width;
+    grid-template-rows: 141px 576px;
+    gap: 60px 0;
+  }
+
   &__title {
     width: 268px;
     margin: 0 auto;
@@ -19,6 +27,40 @@
     letter-spacing: 0.16em;
     color: $c-blue;
     -webkit-text-stroke: 1px $c-blue;
+
+    @media (min-width: $tablet-width) {
+      width: 532px;
+      margin: 0 0 0 34px;
+
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: 0.12em;
+    }
+  }
+
+  &__article {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      width: 340px;
+      grid-row: 2;
+      position: absolute;
+      right: 0;
+      margin-right: 34px;
+    }
+  }
+
+  &__article-title {
+    margin: -117px 0 10px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $c-gray;
+  }
+
+  &__article-text {
+    margin: 0;
+    color: $c-gray;
   }
 
   &__image {
@@ -27,6 +69,13 @@
     height: 240px;
     margin-top: -43px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 768px;
+      height: 576px;
+      grid-row: 2 / 2;
+      margin: 0;
+    }
   }
 
   &__text {
@@ -36,11 +85,44 @@
     box-sizing: border-box;
     padding: 28px 44px 58px 45px;
     margin: -58px auto 0;
+
     background: rgba(0, 0, 0, 0.45);
     mix-blend-mode: normal;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(34px);
     color: #f8f8f8;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &__slide-item {
+    @media (min-width: $tablet-width) {
+      position: relative;
+    }
+  }
+
+  &__inner-text {
+    display: none;
+    position: absolute;
+    width: 303px;
+    height: 237px;
+    box-sizing: border-box;
+    padding: 45px 35px;
+    margin: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(34px);
+    color: #f8f8f8;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-top: 460px;
+      margin-left: 350px;
+      z-index: 3;
+    }
   }
 
   &__slide-list {
@@ -50,6 +132,10 @@
     justify-content: space-between;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+    }
   }
 
   &__slide {
@@ -72,9 +158,58 @@
 
       cursor: default;
     }
+
+    @media (min-width: $tablet-width) {
+      width: 51px;
+      height: 51px;
+      background-color: #eb5757;
+      border-radius: 50%;
+      border: none;
+
+      &--first {
+        margin-top: 630px;
+        margin-left: 85px;
+      }
+
+      &--second {
+        margin-top: 495px;
+        margin-left: 220px;
+      }
+
+      &--third {
+        margin-top: 660px;
+        margin-left: 305px;
+      }
+
+      &--fourth {
+        margin-top: 550px;
+        margin-left: 440px;
+      }
+
+      &--five {
+        margin-top: 400px;
+        margin-left: 480px;
+      }
+
+      &::after {
+        content: "";
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+
+        background-image: url(../images/cross.png);
+      }
+    }
   }
 
   &--outer {
     margin-bottom: 76px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 110px;
+    }
   }
 }
