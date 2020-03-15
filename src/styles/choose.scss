@@ -18,6 +18,20 @@
 
     letter-spacing: 0.16em;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-content-width;
+      margin-bottom: 29px;
+    }
+  }
+
+  &__container {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-areas: "text-main text-main"
+        "list image"
+        "text-inner text-inner";
+    }
   }
 
   &__text {
@@ -26,6 +40,28 @@
     margin: 0 auto;
 
     color: $c-gray;
+
+    @media (min-width: $tablet-width) {
+      width: $tablet-content-width;
+    }
+
+    &--main {
+      @media (min-width: $tablet-width) {
+        width: 579px;
+        grid-area: text-main;
+      }
+    }
+
+    &--inner {
+      @media (min-width: $tablet-width) {
+        grid-area: text-inner;
+      }
+    }
+
+    &--list {
+      width: 246px;
+      margin: 0;
+    }
 
     &--bold {
       font-family: "Proxima Nova Bold", sans-serif;
@@ -39,6 +75,10 @@
 
     &--outer {
       margin-bottom: 32px;
+
+      @media (min-width: $tablet-content-width) {
+        margin: 0 0 18px 34px;
+      }
     }
   }
 
@@ -46,6 +86,13 @@
     width: 320px;
     height: 259px;
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      width: 416px;
+      height: 337px;
+      grid-area: image;
+      margin: 0 36px 26px 0;
+    }
   }
 
   &__list {
@@ -53,6 +100,11 @@
     margin: 0 auto;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $tablet-width) {
+      grid-area: list;
+      margin: 21px 0 0 34px;
+    }
 
     &--outer {
       margin-bottom: 40px;
@@ -76,5 +128,9 @@
 
   &--outer {
     margin-bottom: 98px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 120px;
+    }
   }
 }
