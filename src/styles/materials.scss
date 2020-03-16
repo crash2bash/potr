@@ -15,6 +15,12 @@
     gap: 60px 0;
   }
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: $desktop-width;
+    grid-template-rows: 170px 1081px;
+    gap: 0;
+  }
+
   &__title {
     width: 268px;
     margin: 0 auto;
@@ -36,6 +42,13 @@
       line-height: 80px;
       letter-spacing: 0.12em;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 870px;
+      font-size: 138px;
+      line-height: 139px;
+      margin-left: 135px;
+    }
   }
 
   &__article {
@@ -48,6 +61,12 @@
       position: absolute;
       right: 0;
       margin-right: 34px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 134px;
+      margin-top: 115px;
+      width: 470px;
     }
   }
 
@@ -75,6 +94,11 @@
       height: 576px;
       grid-row: 2 / 2;
       margin: 0;
+    }
+
+    @media (min-width: $desktop-content-width) {
+      width: 1440px;
+      height: 1081px;
     }
   }
 
@@ -123,6 +147,11 @@
       margin-left: 350px;
       z-index: 3;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 890px;
+      margin-left: 920px;
+    }
   }
 
   &__slide-list {
@@ -169,26 +198,51 @@
       &--first {
         margin-top: 630px;
         margin-left: 85px;
+
+        @media (min-width: $desktop-width) {
+          margin-top: 1040px;
+          margin-left: 255px;
+        }
       }
 
       &--second {
         margin-top: 495px;
         margin-left: 220px;
+
+        @media (min-width: $desktop-width) {
+          margin-top: 800px;
+          margin-left: 530px;
+        }
       }
 
       &--third {
         margin-top: 660px;
         margin-left: 305px;
+
+        @media (min-width: $desktop-width) {
+          margin-top: 1090px;
+          margin-left: 645px;
+        }
       }
 
       &--fourth {
         margin-top: 550px;
         margin-left: 440px;
+
+        @media (min-width: $desktop-width) {
+          margin-top: 900px;
+          margin-left: 775px;
+        }
       }
 
       &--five {
         margin-top: 400px;
         margin-left: 480px;
+
+        @media (min-width: $desktop-width) {
+          margin-top: 825px;
+          margin-left: 1040px;
+        }
       }
 
       &::after {
