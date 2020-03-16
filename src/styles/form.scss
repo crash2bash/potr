@@ -23,6 +23,10 @@
       margin-bottom: 25px;
     }
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 20px;
+    }
+
     &::placeholder {
       font-family: "Proxima Nova", sans-serif;
       font-size: 16px;
@@ -35,6 +39,10 @@
 
       @media (min-width: $tablet-width) {
         margin-bottom: 35px;
+      }
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 59px;
       }
     }
   }
