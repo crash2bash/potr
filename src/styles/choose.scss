@@ -23,6 +23,11 @@
       width: $tablet-content-width;
       margin-bottom: 29px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-content-width;
+      margin-bottom: 56px;
+    }
   }
 
   &__container {
@@ -31,6 +36,14 @@
       grid-template-areas: "text-main text-main"
         "list image"
         "text-inner text-inner";
+    }
+
+    @media (min-width: $desktop-width) {
+      width: $desktop-content-width;
+      margin: 0 auto;
+      grid-template-areas: "text-main list image"
+        ". list image"
+        "text-inner text-inner image";
     }
   }
 
@@ -49,6 +62,10 @@
       @media (min-width: $tablet-width) {
         width: 579px;
         grid-area: text-main;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 253px;
       }
     }
 
@@ -79,6 +96,10 @@
       @media (min-width: $tablet-content-width) {
         margin: 0 0 18px 34px;
       }
+
+      @media (min-width: $desktop-width) {
+        margin: 32px 0 0;
+      }
     }
   }
 
@@ -93,6 +114,12 @@
       grid-area: image;
       margin: 0 36px 26px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 528px;
+      height: 427px;
+      margin: 0;
+    }
   }
 
   &__list {
@@ -106,13 +133,25 @@
       margin: 21px 0 0 34px;
     }
 
+    @media (min-width: $desktop-width) {
+      margin: 32px 0 0;
+    }
+
     &--outer {
       margin-bottom: 40px;
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+      }
     }
   }
 
   &__item--outer {
     margin-bottom: 40px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 69px;
+    }
   }
 
   &__item-tittle {
