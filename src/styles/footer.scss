@@ -16,6 +16,10 @@
     justify-content: space-between;
   }
 
+  @media (min-width: $desktop-width) {
+    width: $desktop-content-width;
+  }
+
   &__address {
     display: none;
 
@@ -64,6 +68,10 @@
     @media (min-width: $tablet-width) {
       grid-column: 2;
       margin-top: -60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
     }
   }
 
