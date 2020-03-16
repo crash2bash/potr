@@ -1,0 +1,86 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../fonts/BebasNeueBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+  .button--buy {
+    width: 238px;
+    height: 48px;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    background-color: #ffe339;
+    color: #121212;
+    border: 1px solid #ffe339;
+    outline: none; }
+    .button--buy:hover, .button--buy:focus, .button--buy:active {
+      background-color: transparent; }
+    @media (min-width: 768px) {
+      .button--buy {
+        background-color: transparent;
+        border: 1px solid #03839e; }
+        .button--buy:hover, .button--buy:focus, .button--buy:active {
+          background-color: #03839e;
+          color: #fff; } }
+  @media (min-width: 768px) {
+    .button--header {
+      display: block;
+      margin-left: auto;
+      margin-right: 30px; } }
+  @media (min-width: 1440px) {
+    .button--header {
+      margin-right: 70px; } }
+  .button--order--outer {
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .button--order--outer {
+        margin-bottom: 33px; } }
+  .button--form {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Proxima Nova Bold", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px dashed #333;
+    background-color: transparent;
+    text-transform: none;
+    color: #333; }
+
+/*# sourceMappingURL=button.css.map */

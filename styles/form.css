@@ -1,0 +1,85 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../fonts/BebasNeueBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.form {
+  width: 100%; }
+  .form__input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: transparent; }
+    @media (min-width: 768px) {
+      .form__input {
+        width: 340px;
+        margin-bottom: 25px; } }
+    @media (min-width: 1440px) {
+      .form__input {
+        margin-bottom: 20px; } }
+    .form__input::-webkit-input-placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4f4f4f; }
+    .form__input::-moz-placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4f4f4f; }
+    .form__input:-ms-input-placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4f4f4f; }
+    .form__input::-ms-input-placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4f4f4f; }
+    .form__input::placeholder {
+      font-family: "Proxima Nova", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4f4f4f; }
+    .form__input--outer {
+      margin-bottom: 31px; }
+      @media (min-width: 768px) {
+        .form__input--outer {
+          margin-bottom: 35px; } }
+      @media (min-width: 768px) {
+        .form__input--outer {
+          margin-bottom: 59px; } }
+
+/*# sourceMappingURL=form.css.map */
