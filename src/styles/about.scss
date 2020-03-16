@@ -46,6 +46,13 @@
     }
 
     &--first {
+
+      &::after {
+        @media (min-width: $desktop-width) {
+          left: 269px;
+        }
+      }
+
       @media (min-width: $tablet-width) {
         margin: 0 0 18px;
       }
@@ -67,6 +74,13 @@
     }
 
     &--third {
+
+      &::after {
+        @media (min-width: $desktop-width) {
+          left: 250px;
+        }
+      }
+
       @media (min-width: $tablet-width) {
         margin: 0 0 10px;
       }
@@ -256,6 +270,11 @@
         margin-left: -21px;
 
         background-image: url(../images/star.svg);
+
+        @media (min-width: $desktop-width) {
+          margin-left: -40px;
+          margin-top: 7px;
+        }
       }
     }
 
@@ -359,6 +378,10 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 130px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 150px;
     }
   }
 }
