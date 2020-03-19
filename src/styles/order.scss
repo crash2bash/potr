@@ -22,6 +22,47 @@
     gap: 70px 0;
   }
 
+  &__photo-container {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+
+  &__photo {
+    margin: 0;
+    width: 270px;
+    height: 302px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    transform: rotate(-15deg);
+  }
+
+  &__image-wrapper {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    transition: $transition-time ease-in-out;
+  }
+
+  &__photo:hover .order__image {
+    transform: scale(1.1);
+  }
+
+  &__caption {
+    font-size: 11px;
+    line-height: 14px;
+    color: $c-caption;
+  }
+
   &__list {
     margin: 0 0 60px;
     padding: 0;
