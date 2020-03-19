@@ -88,10 +88,12 @@
     }
   }
 
-  &__image {
+  &__image-container {
     width: 260px;
     height: 258px;
     margin-bottom: 37px;
+
+    overflow: hidden;
 
     @media (min-width: $tablet-width) {
       width: 220px;
@@ -101,7 +103,17 @@
 
     @media (min-width: $desktop-width) {
       width: 370px;
-      height: 370px;
+      height: 366px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    transition: $transition-time ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
