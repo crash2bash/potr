@@ -4,3 +4,9 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin absolutePositioning($x, $y) {
+  position: absolute;
+  top: $y;
+  left: $x;
+}

@@ -20,10 +20,15 @@
     grid-template-columns: 635px 1fr;
     grid-template-rows: 202px 224px;
     gap: 70px 0;
+    padding-top: 200px;
+    padding-bottom: 154px;
+
+    overflow: hidden;
   }
 
   &__photo-container {
     display: none;
+    position: relative;
 
     @media (min-width: $desktop-width) {
       display: block;
@@ -38,6 +43,34 @@
     padding: 20px;
     background-color: #fff;
     transform: rotate(-15deg);
+
+    &--first {
+      @include absolutePositioning(-145px, 160px);
+      transform: rotate(0);
+      z-index: 1;
+    }
+
+    &--second {
+      @include absolutePositioning(150px, 80px);
+    }
+
+    &--third {
+      @include absolutePositioning(270px, -320px);
+      transform: rotate(-29deg);
+    }
+
+    &--fourth {
+      @include absolutePositioning(-20px, -200px);
+    }
+
+    &--five {
+      @include absolutePositioning(60px, 410px);
+    }
+
+    &--six {
+      @include absolutePositioning(350px, 330px);
+      transform: rotate(-30deg);
+    }
   }
 
   &__image-wrapper {
@@ -241,7 +274,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 154px;
+      //margin-bottom: 154px;
+      margin-bottom: 0;
     }
   }
 }

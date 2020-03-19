@@ -171,5 +171,9 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 120px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
