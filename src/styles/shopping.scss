@@ -73,7 +73,7 @@
     @media (min-width: $tablet-width) {
       width: 700px;
       display: grid;
-      grid-template-columns: 210px 151px 110px 110px;
+      grid-template-columns: 210px 151px 100px 100px;
       justify-content: space-around;
     }
 
@@ -135,7 +135,7 @@
     @media (min-width: $tablet-width) {
       width: 700px;
       display: grid;
-      grid-template-columns: 400px 110px 110px;
+      grid-template-columns: 400px 100px 100px;
       justify-content: space-around;
 
       margin: 0;
@@ -324,6 +324,9 @@
 
       @media (min-width: $tablet-width) {
         margin: 0;
+      }
+
+      @media (min-width: $desktop-width) {
         justify-self: end;
       }
     }
@@ -355,6 +358,7 @@
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 418px 200px;
+      gap: 0 65px;
     }
   }
 
