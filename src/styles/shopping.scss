@@ -16,6 +16,11 @@
     padding: 0 12px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 830px;
+    padding: 0 30px;
+  }
+
   &__close {
     display: block;
     position: relative;
@@ -72,6 +77,11 @@
       justify-content: space-around;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 781px;
+      grid-template-columns: 222px 166px 125px 125px;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -97,6 +107,12 @@
       @media (min-width: $tablet-width) {
         display: block;
         justify-self: start;
+      }
+    }
+
+    &--total {
+      @media (min-width: $desktop-width) {
+        margin-left: -20px;
       }
     }
   }
@@ -126,6 +142,11 @@
       padding: 24px 0;
     }
 
+    @media (min-width: $desktop-width) {
+      width: 781px;
+      grid-template-columns: 418px 70px 70px 50px;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -146,6 +167,10 @@
 
     @media (min-width: $tablet-width) {
       width: 400px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 418px;
     }
   }
 
@@ -229,6 +254,29 @@
         background-image: url(../images/plus.svg);
       }
     }
+
+    &--remove {
+      position: relative;
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: block;
+        justify-self: end;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          width: 6px;
+          height: 6px;
+
+          background-image: url(../images/cross_modal.svg);
+        }
+      }
+    }
   }
 
   &__select-value {
@@ -276,6 +324,7 @@
 
       @media (min-width: $tablet-width) {
         margin: 0;
+        justify-self: end;
       }
     }
   }
@@ -302,6 +351,10 @@
       gap: 0 37px;
 
       margin: 33px 0 62px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 418px 200px;
     }
   }
 

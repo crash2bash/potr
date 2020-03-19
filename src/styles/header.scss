@@ -158,6 +158,8 @@
   }
 
   &__title {
+    position: relative;
+    z-index: 1;
     margin: 0 0 21px;
 
     font-family: "Bebas Neue Bold", sans-serif;
