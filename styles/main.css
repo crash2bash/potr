@@ -1403,6 +1403,9 @@ h1 {
   @media (min-width: 768px) {
     .choose--outer {
       margin-bottom: 120px; } }
+  @media (min-width: 1440px) {
+    .choose--outer {
+      margin-bottom: 0; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -1449,7 +1452,74 @@ h1 {
       width: 1440px;
       grid-template-columns: 635px 1fr;
       grid-template-rows: 202px 224px;
-      gap: 70px 0; } }
+      gap: 70px 0;
+      padding-top: 200px;
+      padding-bottom: 154px;
+      overflow: hidden; } }
+  .order__photo-container {
+    display: none;
+    position: relative; }
+    @media (min-width: 1440px) {
+      .order__photo-container {
+        display: block; } }
+  .order__photo {
+    margin: 0;
+    width: 270px;
+    height: 302px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+    .order__photo--first {
+      position: absolute;
+      top: 160px;
+      left: -145px;
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+      z-index: 1; }
+    .order__photo--second {
+      position: absolute;
+      top: 80px;
+      left: 150px; }
+    .order__photo--third {
+      position: absolute;
+      top: -320px;
+      left: 270px;
+      -webkit-transform: rotate(-29deg);
+              transform: rotate(-29deg); }
+    .order__photo--fourth {
+      position: absolute;
+      top: -200px;
+      left: -20px; }
+    .order__photo--five {
+      position: absolute;
+      top: 410px;
+      left: 60px; }
+    .order__photo--six {
+      position: absolute;
+      top: 330px;
+      left: 350px;
+      -webkit-transform: rotate(-30deg);
+              transform: rotate(-30deg); }
+  .order__image-wrapper {
+    width: 230px;
+    height: 230px;
+    margin-bottom: 8px;
+    overflow: hidden; }
+  .order__image {
+    width: 100%;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+  .order__photo:hover .order__image {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  .order__caption {
+    font-size: 11px;
+    line-height: 14px;
+    color: #828282; }
   .order__list {
     margin: 0 0 60px;
     padding: 0;
@@ -1594,7 +1664,7 @@ h1 {
         margin-bottom: 94px; } }
     @media (min-width: 1440px) {
       .order--outer {
-        margin-bottom: 154px; } }
+        margin-bottom: 0; } }
 
 h1 {
   font-family: "Roboto", sans-serif;
@@ -1963,7 +2033,8 @@ h1 {
 html {
   font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  scroll-behavior: smooth; }
 
 body {
   width: 320px;

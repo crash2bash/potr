@@ -148,5 +148,8 @@ h1 {
   @media (min-width: 768px) {
     .choose--outer {
       margin-bottom: 120px; } }
+  @media (min-width: 1440px) {
+    .choose--outer {
+      margin-bottom: 0; } }
 
 /*# sourceMappingURL=choose.css.map */
