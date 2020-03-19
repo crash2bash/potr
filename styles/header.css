@@ -125,26 +125,35 @@ h1 {
         width: 48px;
         height: 48px;
         cursor: pointer; } }
-  .header__photo {
+  .header__photo-container {
     width: 320px;
-    height: 320px; }
+    height: 320px;
+    overflow: hidden; }
     @media (min-width: 768px) {
-      .header__photo {
+      .header__photo-container {
         width: 306px;
         height: 306px;
         grid-column: 2;
         grid-row: 2 / 3; } }
     @media (min-width: 1440px) {
-      .header__photo {
+      .header__photo-container {
         width: 500px;
         height: 500px;
         grid-column: 3;
         justify-self: end; } }
-    .header__photo--outer {
+    .header__photo-container--outer {
       margin-bottom: 25px; }
       @media (min-width: 768px) {
-        .header__photo--outer {
+        .header__photo-container--outer {
           margin: 0; } }
+  .header__photo {
+    width: 100%;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .header__photo:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .header__title {
     margin: 0 0 21px;
     font-family: "Bebas Neue Bold", sans-serif;

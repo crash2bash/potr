@@ -95,19 +95,28 @@ h1 {
     @media (min-width: 768px) {
       .features__item--outer {
         margin: 0; } }
-  .features__image {
+  .features__image-container {
     width: 260px;
     height: 258px;
-    margin-bottom: 37px; }
+    margin-bottom: 37px;
+    overflow: hidden; }
     @media (min-width: 768px) {
-      .features__image {
+      .features__image-container {
         width: 220px;
         height: 218px;
         margin-bottom: 33px; } }
     @media (min-width: 1440px) {
-      .features__image {
+      .features__image-container {
         width: 370px;
-        height: 370px; } }
+        height: 366px; } }
+  .features__image {
+    width: 100%;
+    height: auto;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .features__image:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .features__inner-title {
     margin: 0 0 22px;
     font-family: "Bebas Neue Bold", sans-serif;
