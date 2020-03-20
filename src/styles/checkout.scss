@@ -1,0 +1,21 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
+.checkout {
+  width: 296px;
+  margin: 0 auto;
+
+  &__title {
+    margin: 0 0 39px;
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 36px;
+    line-height: 54px;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+}

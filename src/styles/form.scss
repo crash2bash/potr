@@ -34,6 +34,15 @@
       color: $c-gray;
     }
 
+    &--checkout {
+      padding: 10px 20px;
+    }
+
+    &--payment {
+      width: auto;
+      margin: 0;
+    }
+
     &--outer {
       margin-bottom: 31px;
 
@@ -44,6 +53,97 @@
       @media (min-width: $tablet-width) {
         margin-bottom: 59px;
       }
+    }
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    &--outer {
+      margin-bottom: 99px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    margin: 0 0 52px 18px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__title-value {
+    display: block;
+    margin-right: 20px;
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $c-light-black;
+    color: #fff;
+
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  &__select {
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+
+    width: 100% ;
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+
+    color: $c-gray;
+  }
+
+  &__label {
+
+    &--payment {
+      width: 247px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border-bottom: 1px solid #bdbdbd;
+    }
+
+    &--payment-paypal {
+      width: 247px;
+    }
+  }
+
+  &__label-wrapper {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    &--master {
+      width: 34px;
+      height: 22px;
+      background-image: url(../images/master.png);
+    }
+
+    &--visa {
+      width: 37px;
+      height: 24px;
+      background-image: url(../images/visa.png);
+    }
+
+    &--paypal {
+      width: 21px;
+      height: 21px;
+      background-image: url(../images/paypal.png);
     }
   }
 }
