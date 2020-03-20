@@ -123,6 +123,14 @@
 
     &--outer {
       margin-bottom: 101px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 83px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 95px;
+      }
     }
   }
 }

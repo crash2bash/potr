@@ -9,6 +9,14 @@
   width: 296px;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    width: 725px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 830px;
+  }
+
   &__title {
     margin: 0 0 39px;
     font-family: "Bebas Neue Bold", sans-serif;

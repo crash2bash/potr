@@ -11,6 +11,14 @@
   &--checkout {
     width: 260px;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 544px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 624px;
+    }
   }
 
   &__input {
@@ -44,6 +52,14 @@
       display: block;
       margin: 0 0 25px;
       padding: 10px 20px;
+
+      @media (min-width: $tablet-width) {
+        margin: 0;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 270px;
+      }
     }
 
     &--payment {
@@ -56,8 +72,63 @@
       margin: 0;
       padding: 6px 17px;
 
+      @media (min-width: $tablet-width) {
+        width: 360px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 400px;
+      }
+
       &::placeholder {
         text-transform: uppercase;
+      }
+    }
+
+    &--first-name {
+      @media (min-width: $tablet-width) {
+        grid-column: 1;
+        grid-row: 1;
+      }
+    }
+
+    &--last-name {
+      @media (min-width: $tablet-width) {
+        grid-column: 2;
+        grid-row: 1;
+      }
+    }
+
+    &--email {
+      @media (min-width: $tablet-width) {
+        width: 500px;
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 570px;
+      }
+    }
+
+    &--street {
+      @media (min-width: $tablet-width) {
+        grid-column: 1;
+        grid-row: 3;
+      }
+    }
+
+    &--city {
+      @media (min-width: $tablet-width) {
+        grid-column: 2;
+        grid-row: 3;
+      }
+    }
+
+    &--house {
+      @media (min-width: $tablet-width) {
+        grid-column: 1;
+        grid-row: 4;
       }
     }
 
@@ -88,6 +159,24 @@
     }
   }
 
+  &__checkout-wrapper {
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+      display: grid;
+      grid-template-columns: repeat(2, 240px);
+      grid-template-rows: repeat(4, 70px);
+      justify-content: space-between;
+      align-items: end;
+      margin-left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      grid-template-columns: repeat(2, 270px);
+    }
+  }
+
   &__title {
     display: flex;
     margin: 0 0 52px;
@@ -111,6 +200,10 @@
     letter-spacing: 0.16em;
     line-height: 25px;
     text-align: center;
+
+    @media (min-width: $desktop-width) {
+      margin-right: 30px;
+    }
   }
 
   &__select {
@@ -127,36 +220,93 @@
     background-color: transparent;
 
     color: $c-gray;
+
+    @media (min-width: $tablet-width) {
+      grid-column: 2;
+      grid-row: 4;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 270px;
+    }
   }
 
   &__label {
 
     &--payment {
       width: 260px;
-      margin: 0 auto;
+      margin-left: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 11px 0;
 
-      border-bottom: 1px solid #bdbdbd;
+      color: $c-caption;
+
+      @media (min-width: $tablet-width) {
+        width: 247px;
+      }
     }
 
     &--payment-paypal {
       width: 120px;
-      margin: 0;
-      border-bottom: none;
+    }
+
+    &--outer {
+      display: block;
+      margin-bottom: 40px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--name {
+
+      @media (min-width: $tablet-width) {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 570px;
+      }
+    }
+
+    &--card {
+
+      @media (min-width: $tablet-width) {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 570px;
+      }
     }
   }
 
   &__label-wrapper {
     width: 260px;
-    margin: 0 auto;
+    margin: 0 auto 37px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     border-bottom: 1px solid #bdbdbd;
+
+    @media (min-width: $tablet-width) {
+      width: 500px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      margin: 0 0 37px auto;
+    }
   }
 
   &__icon {
@@ -184,5 +334,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 235px;
+      margin-bottom: 27px;
+    }
   }
 }

@@ -614,45 +614,49 @@
             <span class="form__title-value">1</span>
             Provide your address
           </legend>
-          <input type="text"
-                 class="form__input form__input--checkout"
-                 placeholder="First name"
-                 required>
-          <input type="text"
-                 class="form__input form__input--checkout"
-                 placeholder="Last name"
-                 required>
-          <input type="email"
-                 class="form__input form__input--checkout"
-                 placeholder="Email"
-                 required>
-          <input type="text"
-                 class="form__input form__input--checkout"
-                 placeholder="City"
-                 required>
-          <input type="text"
-                 class="form__input form__input--checkout"
-                 placeholder="Street"
-                 required>
-          <input type="number"
-                 class="form__input form__input--checkout"
-                 placeholder="House number"
-                 required>
-          <select name="country" id="country" class="form__select">
-            <option value="Ukraine"
-                    class="form__option"
-                    selected>
-              Ukraine
-            </option>
-            <option value="Great Britain"
-                    class="form__option">
-              Great Britain
-            </option>
-            <option value="Germany"
-                    class="form__option">
-              Germany
-            </option>
-          </select>
+          <div class="form__checkout-wrapper">
+            <input type="text"
+                   class="form__input form__input--checkout form__input--first-name"
+                   placeholder="First name"
+                   required>
+            <input type="text"
+                   class="form__input form__input--checkout form__input--last-name"
+                   placeholder="Last name"
+                   required>
+            <input type="email"
+                   class="form__input form__input--checkout form__input--email"
+                   placeholder="Email"
+                   required>
+            <input type="text"
+                   class="form__input form__input--checkout form__input--city"
+                   placeholder="City"
+                   required>
+            <input type="text"
+                   class="form__input form__input--checkout form__input--street"
+                   placeholder="Street"
+                   required>
+            <input type="number"
+                   class="form__input form__input--checkout form__input--house"
+                   placeholder="House number"
+                   required>
+            <select name="country"
+                    id="country"
+                    class="form__select">
+              <option value="Ukraine"
+                      class="form__option"
+                      selected>
+                Ukraine
+              </option>
+              <option value="Great Britain"
+                      class="form__option">
+                Great Britain
+              </option>
+              <option value="Germany"
+                      class="form__option">
+                Germany
+              </option>
+            </select>
+          </div>
         </fieldset>
 
         <fieldset class="form__fieldset form__fieldset--outer form__fieldset--payment">
@@ -660,18 +664,22 @@
             <span class="form__title-value">2</span>
             Select a payment method
           </legend>
-          <label class="form__label form__label--payment">
-            <input type="radio" name="payment" class="form__input form__input--payment">
-            <span class="form__icon form__icon--master"></span>
-            <span class="form__icon form__icon--visa"></span>
-            MasterCard / Visa
-          </label>
-          <div class="form__label-wrapper">
-            <label class="form__label form__label--payment form__label--payment-paypal">
-              <input type="radio" name="payment" class="form__input form__input--payment">
-              <span class="form__icon form__icon--paypal"></span>
-              PayPal
-            </label>
+          <div class="form__payment-wrapper">
+            <div class="form__label-wrapper">
+              <label class="form__label form__label--payment">
+                <input type="radio" name="payment" class="form__input form__input--payment">
+                <span class="form__icon form__icon--master"></span>
+                <span class="form__icon form__icon--visa"></span>
+                MasterCard / Visa
+              </label>
+            </div>
+            <div class="form__label-wrapper">
+              <label class="form__label form__label--payment form__label--payment-paypal">
+                <input type="radio" name="payment" class="form__input form__input--payment">
+                <span class="form__icon form__icon--paypal"></span>
+                PayPal
+              </label>
+            </div>
           </div>
         </fieldset>
 
@@ -680,26 +688,28 @@
             <span class="form__title-value">3</span>
             Your payment
           </legend>
-          <div class="form__amount">
-            <span class="form__name">
-              Amount:
-            </span>
-            <span class="form__value">
-              USD 7.50
-            </span>
+          <div class="form__pay-wrapper">
+            <div class="form__amount">
+              <span class="form__name">
+                Amount:
+              </span>
+              <span class="form__value">
+                USD 7.50
+              </span>
+            </div>
+            <label class="form__label form__label--outer form__label--name">
+              Name on card:
+              <input type="text"
+                     class="form__input form__input--pay"
+                     placeholder="your name" required>
+            </label>
+            <label class="form__label form__label--card">
+              Card number:
+              <input type="number"
+                     class="form__input form__input--pay"
+                     placeholder=".... .... .... ...." required>
+            </label>
           </div>
-          <label class="form__label form__label--name">
-            Name on card:
-            <input type="text"
-                   class="form__input form__input--pay form__input--outer"
-                   placeholder="your name" required>
-          </label>
-          <label class="form__label form__label--card">
-            Card number:
-            <input type="number"
-                   class="form__input form__input--pay"
-                   placeholder=".... .... .... ...." required>
-          </label>
         </fieldset>
         <a class="button button--payment button--payment--outer">
           Submit
