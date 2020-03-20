@@ -1,0 +1,50 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Bebas Neue Bold";
+  src: url("../fonts/BebasNeueBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+.checkout {
+  width: 296px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .checkout {
+      width: 725px; } }
+  @media (min-width: 1440px) {
+    .checkout {
+      width: 830px; } }
+  .checkout__title {
+    margin: 0 0 39px;
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 36px;
+    line-height: 54px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase; }
+
+/*# sourceMappingURL=checkout.css.map */
