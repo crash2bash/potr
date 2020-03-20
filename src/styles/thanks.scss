@@ -1,0 +1,88 @@
+@import "utils";
+@import "fonts";
+@import "typography";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/extends";
+
+.thanks {
+  width: 296px;
+  height: 376px;
+  margin: 0 auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+    height: 373px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 830px;
+    height: 431px;
+  }
+
+  &__container {
+    @media (min-width: $tablet-width) {
+      margin-left: 120px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 59px 46px;
+    position: relative;
+
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 64px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 71px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -35px;
+      left: -46px;
+      border-radius: 50%;
+      background-color: #ffe339;
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    width: 260px;
+    margin: 0 0 13px;
+
+    font-size: 24px;
+    line-height: 36px;
+
+    @media (min-width: $tablet-width) {
+      width: 528px;
+      margin-bottom: 19px;
+
+      font-size: 32px;
+      line-height: 48px;
+      font-weight: 600;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 11px;
+    }
+  }
+
+  &__details {
+    width: 260px;
+    margin: 0;
+  }
+}

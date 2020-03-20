@@ -8,7 +8,7 @@
 .shopping {
   width: 296px;
   box-sizing: border-box;
-  padding: 0 18px;
+  padding: 10px 18px 0;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -32,7 +32,11 @@
     background-color: $c-light-black;
 
     @media (min-width: $tablet-width) {
-      margin: 21px 21px 0 auto;
+      margin: 21px 21px -23px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 30px 40px -50px auto;
     }
 
     &::before {
@@ -47,6 +51,30 @@
 
       background-image: url(../images/close.svg);
       cursor: pointer;
+    }
+
+    &--checkout {
+      margin-bottom: 25px;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 17px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: -23px;
+      }
+    }
+
+    &--thanks {
+      margin-bottom: 0;
+
+      @media (min-width: $tablet-width) {
+        margin-bottom: 6px;
+      }
+
+      @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+      }
     }
   }
 
