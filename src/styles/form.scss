@@ -116,15 +116,18 @@
     }
 
     &--payment-paypal {
-      width: 247px;
+      width: 120px;
+      border-bottom: none;
     }
   }
 
   &__label-wrapper {
-    width: 120px;
+    width: 247px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    border-bottom: 1px solid #bdbdbd;
   }
 
   &__icon {
