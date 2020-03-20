@@ -8,6 +8,11 @@
 .form {
   width: 100%;
 
+  &--checkout {
+    width: 260px;
+    margin: 0 auto;
+  }
+
   &__input {
     box-sizing: border-box;
     width: 100%;
@@ -35,12 +40,25 @@
     }
 
     &--checkout {
+      width: 240px;
+      display: block;
+      margin: 0 0 25px;
       padding: 10px 20px;
     }
 
     &--payment {
       width: auto;
       margin: 0;
+    }
+
+    &--pay {
+      width: 260px;
+      margin: 0;
+      padding: 6px 17px;
+
+      &::placeholder {
+        text-transform: uppercase;
+      }
     }
 
     &--outer {
@@ -64,11 +82,16 @@
     &--outer {
       margin-bottom: 99px;
     }
+
+    &--out {
+      margin-bottom: 56px;
+    }
   }
 
   &__title {
     display: flex;
-    margin: 0 0 52px 18px;
+    margin: 0 0 52px;
+    padding: 0;
 
     font-size: 16px;
     line-height: 24px;
@@ -91,12 +114,14 @@
   }
 
   &__select {
+    display: block;
+    width: 240px;
+    padding: 10px 20px;
+
     font-family: "Proxima Nova", sans-serif;
     font-size: 16px;
     line-height: 24px;
 
-    width: 100% ;
-    padding: 10px 20px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: transparent;
@@ -107,22 +132,26 @@
   &__label {
 
     &--payment {
-      width: 247px;
+      width: 260px;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 11px 0;
 
       border-bottom: 1px solid #bdbdbd;
     }
 
     &--payment-paypal {
       width: 120px;
+      margin: 0;
       border-bottom: none;
     }
   }
 
   &__label-wrapper {
-    width: 247px;
+    width: 260px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,5 +177,12 @@
       height: 21px;
       background-image: url(../images/paypal.png);
     }
+  }
+
+  &__amount {
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
   }
 }

@@ -655,7 +655,7 @@
           </select>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--payment">
+        <fieldset class="form__fieldset form__fieldset--outer form__fieldset--payment">
           <legend class="form__title">
             <span class="form__title-value">2</span>
             Select a payment method
@@ -675,8 +675,8 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--pay">
-          <legend class="form__legend">
+        <fieldset class="form__fieldset form__fieldset--pay form__fieldset--out">
+          <legend class="form__title">
             <span class="form__title-value">3</span>
             Your payment
           </legend>
@@ -691,17 +691,17 @@
           <label class="form__label form__label--name">
             Name on card:
             <input type="text"
-                   class="form__input"
+                   class="form__input form__input--pay form__input--outer"
                    placeholder="your name" required>
           </label>
           <label class="form__label form__label--card">
             Card number:
             <input type="number"
-                   class="form__input"
+                   class="form__input form__input--pay"
                    placeholder=".... .... .... ...." required>
           </label>
         </fieldset>
-        <a class="button button--form">
+        <a class="button button--payment button--payment--outer">
           Submit
         </a>
       </form>
