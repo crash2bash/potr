@@ -54,8 +54,9 @@ h1 {
     color: #4f4f4f;
     text-decoration: none;
     -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out; }
-    .navigation__link:hover, .navigation__link:focus, .navigation__link:active {
+    transition: 0.3s ease-in-out;
+    outline: none; }
+    .navigation__link:hover, .navigation__link:focus {
       color: #000; }
 
 /*# sourceMappingURL=navigation.css.map */

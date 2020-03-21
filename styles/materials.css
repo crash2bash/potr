@@ -106,7 +106,7 @@ h1 {
       height: 576px;
       grid-row: 2 / 2;
       margin: 0; } }
-  @media (min-width: 1170px) {
+  @media (min-width: 1440px) {
     .materials__image {
       width: 1440px;
       height: 1081px; } }

@@ -44,10 +44,12 @@ h1 {
   background-color: #f8f8f8; }
   @media (min-width: 768px) {
     .checkout {
-      width: 725px; } }
+      width: 725px;
+      padding-top: 21px; } }
   @media (min-width: 1440px) {
     .checkout {
-      width: 830px; } }
+      width: 830px;
+      padding-top: 30px; } }
   .checkout__title {
     width: 260px;
     margin: 0 auto 39px;

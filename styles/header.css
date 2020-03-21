@@ -31,6 +31,7 @@ h1 {
   font-weight: 400; }
 
 .header {
+  position: relative;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .header {
@@ -70,7 +71,8 @@ h1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 15px auto; }
+    margin: 0 auto 15px;
+    padding: 15px 0 0; }
     @media (min-width: 768px) {
       .header__mobile {
         width: 700px;
@@ -114,7 +116,10 @@ h1 {
       .header__sandwich {
         display: none; } }
   .header__basket-icon {
-    display: none; }
+    display: none;
+    border: none;
+    background-color: transparent;
+    outline: none; }
     @media (min-width: 1440px) {
       .header__basket-icon {
         display: block;
@@ -124,7 +129,11 @@ h1 {
         background-position: center;
         width: 48px;
         height: 48px;
-        cursor: pointer; } }
+        cursor: pointer;
+        -webkit-transition: 0.2s ease-in-out;
+        transition: 0.2s ease-in-out; }
+        .header__basket-icon:hover, .header__basket-icon:focus {
+          background-image: url(../images/shopping_bag.png); } }
   .header__photo-container {
     width: 320px;
     height: 320px;

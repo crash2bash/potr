@@ -60,13 +60,19 @@ h1 {
     height: 46px;
     border-radius: 50%;
     background-color: #333;
-    cursor: pointer; }
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    outline: none; }
     @media (min-width: 768px) {
       .shopping__close {
         margin: 21px 9px -23px auto; } }
     @media (min-width: 1440px) {
       .shopping__close {
         margin: 30px 10px -50px auto; } }
+    .shopping__close:hover, .shopping__close:focus {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
     .shopping__close::before {
       content: "";
       position: absolute;
