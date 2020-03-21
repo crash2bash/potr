@@ -39,8 +39,10 @@ h1 {
   transition: 0.3s ease-in-out;
   cursor: pointer; }
   .button--buy {
+    position: relative;
     width: 238px;
     height: 48px;
+    padding: 0 101px 0 62px;
     font-family: "Proxima Nova Bold", sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -48,8 +50,22 @@ h1 {
     color: #121212;
     border: 1px solid #ffe339;
     outline: none; }
+    .button--buy::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      -webkit-transform: translate(-70%, -50%);
+              transform: translate(-70%, -50%);
+      width: 26px;
+      height: 8px;
+      background-image: url(../images/button_arrow.svg);
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out; }
     .button--buy:hover, .button--buy:focus, .button--buy:active {
       background-color: transparent; }
+      .button--buy:hover::after, .button--buy:focus::after, .button--buy:active::after {
+        background-image: url(../images/button_arrow_hover.svg); }
     @media (min-width: 768px) {
       .button--buy {
         background-color: transparent;
