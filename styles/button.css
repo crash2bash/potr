@@ -115,6 +115,10 @@ h1 {
         grid-column: 1;
         grid-row: 1;
         justify-self: center; } }
+    .button--checkout:hover, .button--checkout:focus {
+      border: 1px solid #03839e;
+      background-color: #03839e;
+      color: #f8f8f8; }
   .button--payment {
     display: block;
     width: 231px;
@@ -134,5 +138,9 @@ h1 {
       @media (min-width: 1440px) {
         .button--payment--outer {
           margin-bottom: 95px; } }
+    .button--payment:hover, .button--payment:focus {
+      border: 1px solid #03839e;
+      background-color: #03839e;
+      color: #f8f8f8; }
 
 /*# sourceMappingURL=button.css.map */

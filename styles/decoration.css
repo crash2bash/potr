@@ -32,7 +32,7 @@ h1 {
 
 .decoration {
   position: absolute;
-  z-index: 4;
+  z-index: 3;
   width: 144px;
   height: 14px;
   display: -webkit-box;
