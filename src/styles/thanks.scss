@@ -7,15 +7,24 @@
 
 .thanks {
   display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
   width: 296px;
   height: 376px;
   margin: 0 auto;
-  padding-top: 10px;
+  padding: 10px 18px 0;
   box-sizing: border-box;
+  z-index: 4;
+
+  background-color: $c-main;
 
   @media (min-width: $tablet-width) {
     width: 700px;
     height: 373px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +34,12 @@
 
   &__container {
     @media (min-width: $tablet-width) {
+      margin-top: 34px;
       margin-left: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 130px;
     }
   }
 

@@ -8,9 +8,9 @@
 .shopping {
   display: none;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, 0);
   width: 296px;
   box-sizing: border-box;
   padding: 10px 18px 0;
@@ -31,7 +31,7 @@
   &__close {
     display: block;
     position: relative;
-    margin: 0 10px 23px auto;
+    margin: 0 -8px 23px auto;
     width: 46px;
     height: 46px;
 
@@ -41,11 +41,11 @@
     cursor: pointer;
 
     @media (min-width: $tablet-width) {
-      margin: 21px 21px -23px auto;
+      margin: 21px 9px -23px auto;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 30px 40px -50px auto;
+      margin: 30px 10px -50px auto;
     }
 
     &::before {
@@ -62,26 +62,31 @@
     }
 
     &--checkout {
-      margin-bottom: 25px;
+      margin: 0 10px 25px auto;
 
       @media (min-width: $tablet-width) {
         margin-bottom: 17px;
+        margin-right: 22px;
       }
 
       @media (min-width: $desktop-width) {
         margin-bottom: -23px;
+        margin-right: 40px;
       }
     }
 
     &--thanks {
-      margin-bottom: 0;
+      margin: 0 -9px 0 auto;
 
       @media (min-width: $tablet-width) {
-        margin-bottom: 6px;
+        margin-top: 11px;
+        margin-bottom: -22px;
+        margin-right: 22px;
       }
 
       @media (min-width: $desktop-width) {
         margin-bottom: 0;
+        margin-right: 40px;
       }
     }
   }
@@ -96,6 +101,7 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 21px;
+      margin-left: 31px;
     }
   }
 
