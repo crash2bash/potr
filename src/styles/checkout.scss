@@ -20,10 +20,12 @@
 
   @media (min-width: $tablet-width) {
     width: 725px;
+    padding-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
     width: 830px;
+    padding-top: 30px;
   }
 
   &__title {

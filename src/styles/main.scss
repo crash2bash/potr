@@ -3,6 +3,7 @@
 @import "typography";
 @import "header";
 @import "navigation";
+@import "mobile-nav";
 @import "text-stroke";
 @import "button";
 @import "about";
@@ -23,6 +24,7 @@ html {
   font-family: "Proxima Nova", sans-serif;
   font-size: 16px;
   line-height: 24px;
+
   scroll-behavior: smooth;
 }
 

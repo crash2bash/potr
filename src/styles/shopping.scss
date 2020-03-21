@@ -37,8 +37,10 @@
 
     border-radius: 50%;
     background-color: $c-light-black;
+    transition: $transition-time ease-in-out;
 
     cursor: pointer;
+    outline: none;
 
     @media (min-width: $tablet-width) {
       margin: 21px 9px -23px auto;
@@ -46,6 +48,11 @@
 
     @media (min-width: $desktop-width) {
       margin: 30px 10px -50px auto;
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
     }
 
     &::before {

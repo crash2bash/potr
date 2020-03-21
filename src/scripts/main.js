@@ -5,6 +5,10 @@ const shoppingModal = document.querySelector('.shopping');
 const checkoutModal = document.querySelector('.checkout');
 const thanksModal = document.querySelector('.thanks');
 const overlay = document.querySelector('.overlay');
+const sandwich = document.querySelector('.header__sandwich');
+const mobileNavigation = document.querySelector('.mobile-nav');
+// eslint-disable-next-line max-len
+const closeMobileNavigation = document.querySelector('.mobile-nav__close-container');
 const shoppingBag = document.querySelector('.header__basket-icon');
 const closeButton = document.querySelectorAll('.shopping__close');
 const checkoutButton = document.querySelector('.button--checkout');
@@ -63,4 +67,14 @@ window.addEventListener('keydown', function(evt) {
       thanksModal.classList.remove('show');
     }
   }
+});
+
+sandwich.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  mobileNavigation.classList.add('mobile-nav--active');
+});
+
+closeMobileNavigation.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  mobileNavigation.classList.remove('mobile-nav--active');
 });
