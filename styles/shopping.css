@@ -33,10 +33,10 @@ h1 {
 .shopping {
   display: none;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-          transform: translate(-50%, -20%);
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 296px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -55,7 +55,7 @@ h1 {
   .shopping__close {
     display: block;
     position: relative;
-    margin: 0 10px 23px auto;
+    margin: 0 -8px 23px auto;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -63,10 +63,10 @@ h1 {
     cursor: pointer; }
     @media (min-width: 768px) {
       .shopping__close {
-        margin: 21px 21px -23px auto; } }
+        margin: 21px 9px -23px auto; } }
     @media (min-width: 1440px) {
       .shopping__close {
-        margin: 30px 40px -50px auto; } }
+        margin: 30px 10px -50px auto; } }
     .shopping__close::before {
       content: "";
       position: absolute;
@@ -78,21 +78,26 @@ h1 {
       height: 14px;
       background-image: url(../images/close.svg); }
     .shopping__close--checkout {
-      margin-bottom: 25px; }
+      margin: 0 10px 25px auto; }
       @media (min-width: 768px) {
         .shopping__close--checkout {
-          margin-bottom: 17px; } }
+          margin-bottom: 17px;
+          margin-right: 22px; } }
       @media (min-width: 1440px) {
         .shopping__close--checkout {
-          margin-bottom: -23px; } }
+          margin-bottom: -23px;
+          margin-right: 40px; } }
     .shopping__close--thanks {
-      margin-bottom: 0; }
+      margin: 0 -9px 0 auto; }
       @media (min-width: 768px) {
         .shopping__close--thanks {
-          margin-bottom: 6px; } }
+          margin-top: 11px;
+          margin-bottom: -22px;
+          margin-right: 22px; } }
       @media (min-width: 1440px) {
         .shopping__close--thanks {
-          margin-bottom: 0; } }
+          margin-bottom: 0;
+          margin-right: 40px; } }
   .shopping__title {
     font-family: "Bebas Neue Bold";
     font-size: 36px;
@@ -103,7 +108,8 @@ h1 {
     color: #000; }
     @media (min-width: 768px) {
       .shopping__title {
-        margin-bottom: 21px; } }
+        margin-bottom: 21px;
+        margin-left: 31px; } }
   .shopping__list-titles {
     width: 260px;
     position: relative;
