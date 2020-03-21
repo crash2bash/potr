@@ -155,6 +155,8 @@
     }
 
     &--third {
+      position: relative;
+
       @media (min-width: $tablet-width) {
         display: grid;
         grid-template-columns: 284px 18px 340px;
@@ -240,6 +242,7 @@
     }
 
     &--third {
+
       @media (min-width: $tablet-width) {
         width: 284px;
         height: 404px;
@@ -314,6 +317,7 @@
     }
 
     &--third {
+
       @media (min-width: $tablet-width) {
         margin-bottom: 10px;
       }

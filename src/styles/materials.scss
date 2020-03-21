@@ -6,6 +6,7 @@
 @import "utils/extends";
 
 .materials {
+  position: relative;
 
   @media (min-width: $tablet-width) {
     position: relative;
