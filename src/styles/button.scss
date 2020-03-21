@@ -127,6 +127,13 @@
       grid-row: 1;
       justify-self: center;
     }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $c-blue;
+      background-color: $c-blue;
+      color: $c-main;
+    }
   }
 
   &--payment {
@@ -153,6 +160,13 @@
       @media (min-width: $desktop-width) {
         margin-bottom: 95px;
       }
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $c-blue;
+      background-color: $c-blue;
+      color: $c-main;
     }
   }
 }
