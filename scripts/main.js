@@ -7,6 +7,7 @@ const thanksModal = document.querySelector('.thanks');
 const overlay = document.querySelector('.overlay');
 const sandwich = document.querySelector('.header__sandwich');
 const mobileNavigation = document.querySelector('.mobile-nav');
+const materialsSlide = document.querySelectorAll('.materials__slide');
 // eslint-disable-next-line max-len
 const closeMobileNavigation = document.querySelector('.mobile-nav__close-container');
 const shoppingBag = document.querySelector('.header__basket-icon');
@@ -77,4 +78,16 @@ sandwich.addEventListener('click', function(evt) {
 closeMobileNavigation.addEventListener('click', function(evt) {
   evt.preventDefault();
   mobileNavigation.classList.remove('mobile-nav--active');
+});
+
+materialsSlide.forEach(item => {
+  item.addEventListener('click', function(evt) {
+    evt.preventDefault();
+
+    if (item.classList.contains('materials__slide--show')) {
+      item.classList.remove('materials__slide--show');
+    } else {
+      item.classList.add('materials__slide--show');
+    }
+  });
 });
