@@ -374,6 +374,9 @@ h1 {
     display: block;
     padding: 5px 5px 5px 0;
     margin: 0 0 10px;
+    font-family: "Proxima Nova", sans-serif;
+    border: none;
+    background-color: transparent;
     text-decoration: none;
     color: #fff; }
     @media (min-width: 768px) {
