@@ -59,6 +59,27 @@
     }
   }
 
+  &__socials-image {
+    transition: $transition-time ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
+  &__socials-link {
+    outline: none;
+
+    &:hover .footer__socials-image {
+      transform: scale(1.2);
+    }
+
+    &:focus .footer__socials-image {
+      transform: scale(1.2);
+    }
+  }
+
   &__title-container {
     width: 170px;
     margin: 0 auto;

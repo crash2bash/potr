@@ -33,6 +33,9 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     background-color: transparent;
 
+    transition: $transition-time ease-in-out;
+    outline: none;
+
     @media (min-width: $tablet-width) {
       width: 340px;
       margin-bottom: 25px;
@@ -40,6 +43,11 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid rgba(0, 0, 0, 1);
     }
 
     &::placeholder {
