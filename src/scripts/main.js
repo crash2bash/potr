@@ -11,6 +11,7 @@ const materialsSlide = document.querySelectorAll('.materials__slide');
 const mainNavigationLink = document.querySelectorAll('.navigation__link');
 const mobileNavigationLink = document.querySelectorAll('.mobile-nav__link');
 const mobileBasket = document.querySelector('.mobile-nav__link--basket');
+const buttonOrder = document.querySelector('.button--order');
 // eslint-disable-next-line max-len
 const closeMobileNavigation = document.querySelector('.mobile-nav__close-container');
 const shoppingBag = document.querySelector('.header__basket-icon');
@@ -128,4 +129,13 @@ mobileBasket.addEventListener('click', function(evt) {
   overlay.classList.add('show');
   shoppingModal.classList.add('show');
   mobileNavigation.classList.remove('mobile-nav--active');
+});
+
+buttonOrder.addEventListener('click', function(evt) {
+  evt.preventDefault();
+
+  document.documentElement.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
 });
