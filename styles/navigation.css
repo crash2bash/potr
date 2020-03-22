@@ -49,14 +49,35 @@ h1 {
     margin: 0;
     list-style: none; }
   .navigation__link {
+    position: relative;
     font-size: 16px;
     line-height: 24px;
     color: #4f4f4f;
     text-decoration: none;
+    outline: none;
     -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    outline: none; }
+    transition: 0.3s ease-in-out; }
     .navigation__link:hover, .navigation__link:focus {
+      color: #000; }
+    .navigation__link::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: #333;
+      opacity: 0;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px); }
+    .navigation__link:hover::after, .navigation__link:focus::after, .navigation__link:active::after {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
       color: #000; }
 
 /*# sourceMappingURL=navigation.css.map */

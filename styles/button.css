@@ -87,6 +87,7 @@ h1 {
       .button--order--outer {
         margin-bottom: 33px; } }
   .button--form {
+    position: relative;
     display: block;
     width: 50px;
     margin: 0 auto;
@@ -95,10 +96,31 @@ h1 {
     font-size: 16px;
     line-height: 24px;
     border: none;
-    border-bottom: 1px dashed #333;
     background-color: transparent;
     text-transform: none;
-    color: #333; }
+    color: #333;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    outline: none; }
+    .button--form::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      border-radius: 2px;
+      background-color: #333;
+      opacity: 0;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      -webkit-transform: translateY(10px);
+              transform: translateY(10px); }
+    .button--form:hover::after, .button--form:focus::after, .button--form:active::after {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1; }
   .button--checkout {
     display: block;
     width: 238px;
