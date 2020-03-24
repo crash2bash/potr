@@ -164,5 +164,28 @@ h1 {
       border: 1px solid #03839e;
       background-color: #03839e;
       color: #f8f8f8; }
+  .button--up {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    top: 83%;
+    right: 70%;
+    width: 24px;
+    height: 20px;
+    padding: 25px;
+    border: none;
+    outline: none;
+    background-image: url(../images/arrow-up.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .button--up {
+        top: 80%;
+        left: 80%; } }
+    .button--up:hover {
+      -webkit-animation: rubberBand 0.75s;
+              animation: rubberBand 0.75s; }
 
 /*# sourceMappingURL=button.css.map */
