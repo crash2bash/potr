@@ -18,6 +18,7 @@ const shoppingBag = document.querySelector('.header__basket-icon');
 const closeButton = document.querySelectorAll('.shopping__close');
 const checkoutButton = document.querySelector('.button--checkout');
 const paymentButton = document.querySelector('.button--payment');
+const upButton = document.querySelector('.button--up');
 
 shoppingBag.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -134,6 +135,21 @@ mobileBasket.addEventListener('click', function(evt) {
 buttonOrder.addEventListener('click', function(evt) {
   evt.preventDefault();
 
+  document.documentElement.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+});
+
+window.onscroll = function() {
+  if (window.pageYOffset > 1200) {
+    upButton.classList.add('show');
+  } else {
+    upButton.classList.remove('show');
+  }
+};
+
+upButton.addEventListener('click', function() {
   document.documentElement.scrollIntoView({
     behavior: 'smooth',
     block: 'start',
